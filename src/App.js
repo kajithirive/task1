@@ -3,7 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Child from './Message.js';
 
-export default function App() {
+const App = () => {
   const [index, setIndex] = useState("");
   const [count, setcount] = useState(0);
   async function kaji() {
@@ -22,5 +22,7 @@ export default function App() {
     <Child cont = {count}></Child></>
   );
 }
+
+export default App;
 
 
